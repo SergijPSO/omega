@@ -1,0 +1,85 @@
+//TODO in the end move necessary styles to general
+@import './variables.scss';
+
+.app {
+  &__mobile {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9;
+
+    &-header {
+      padding: 1rem 2rem;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      z-index: 1;
+      border-bottom: .063rem solid $transparent-white;
+
+      &__burger {
+        padding: .25rem;
+        width: 100%;
+        max-width: 2rem;
+        max-height: rem;
+        box-sizing: border-box;
+        border: .063rem solid $primary-white;
+        border-radius: .25rem;
+
+        &-item {
+          display: block;
+          height: .25rem;
+          background-color: $primary-white;
+          border-radius: .375rem;
+
+          &:nth-child(2) {
+            margin: .25rem 0;
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            border-bottom: 0;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    &-navigation {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 73.5rem;
+      transition: all .3s ease-out;
+
+      &__item {
+        padding: .8rem 0;
+        width: 100%;
+        color: $primary-white;
+        text-align: center;
+        font-weight: 500;
+        border-bottom: .063rem solid $transparent-white;
+      }
+
+      &--active {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        transition: all .1s ease-in;
+        backdrop-filter: blur(10rem);
+
+        .app__mobile-navigation__item {
+          display: block;
+        }
+
+      }
+    }
+  }
+}

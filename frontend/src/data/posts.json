@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "0",
+      "image": "/images/posts/post1.png",
+      "title": "Kym Marsh, 42, becomes a grandmother for the first time as daughter Emilie Mae",
+      "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt"
+    },
+    {
+      "id": "1",
+      "image": "/images/posts/post2.png",
+      "title": "Kym Marsh, 42, becomes a grandmother for the first time as daughter Emilie Mae",
+      "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt"
+    },
+    {
+      "id": "2",
+      "image": "/images/posts/post3.png",
+      "title": "Kym Marsh, 42, becomes a grandmother for the first time as daughter Emilie Mae",
+      "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt"
+    },
+    {
+      "id": "3",
+      "image": "/images/posts/post4.png",
+      "title": "Kym Marsh, 42, becomes a grandmother for the first time as daughter Emilie Mae",
+      "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt"
+    }
+  ]
+}

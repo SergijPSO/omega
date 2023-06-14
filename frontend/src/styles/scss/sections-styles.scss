@@ -1,0 +1,18 @@
+.app-section {
+  width: 100%;
+
+  &--preview {
+    background: url(../../../public/images/preview_bcg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: contain;
+  }
+
+  &--posts {
+    padding: 4.75rem 0 5.063rem;
+    width: 100%;
+    max-width: 96rem;
+    margin: 0 auto;
+  }
+}

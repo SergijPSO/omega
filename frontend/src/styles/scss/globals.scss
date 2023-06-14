@@ -1,0 +1,22 @@
+@import './variables.scss';
+@import './footer-styles.scss';
+@import './header-styles.scss';
+@import './header-mobile.scss';
+@import './layout-styles.scss';
+@import './main-content-styles.scss';
+@import './nav-bar-styles.scss';
+@import './sections-styles.scss';
+@import './jumbotron-styles.scss';
+@import './posts-styles.scss';
+@import './post-item-styles.scss';
+
+//default styles resets
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  // font-family: 'Work Sans', sans-serif;
+}
