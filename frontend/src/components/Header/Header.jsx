@@ -5,7 +5,7 @@ const Header = () => {
     <header className='app__header'>
       <nav className='app__navigation'>
         <div className='app__navigation__logo'>
-          <Link href='/' passHref activeclassname='app__navigation__logo-link'>
+          <Link href='/' passHref className='app__navigation__logo-link'>
             <img
               src='/omega.svg'
               alt='logo'
@@ -19,7 +19,7 @@ const Header = () => {
               href='/'
               scroll={false}
               passHref
-              activeclassname='app__navigation__item-link'
+              className='app__navigation__item-link'
             >
               WHAT WE DO
             </Link>
@@ -29,7 +29,7 @@ const Header = () => {
               href='/#prices'
               scroll={false}
               passHref
-              activeclassname='app__navigation__item-link'
+              className='app__navigation__item-link'
             >
               OUR WORK
             </Link>
@@ -39,7 +39,7 @@ const Header = () => {
               href='/#about'
               scroll={false}
               passHref
-              activeclassname='app__navigation__item-link'
+              className='app__navigation__item-link'
             >
               SEO INSIGHTS
             </Link>

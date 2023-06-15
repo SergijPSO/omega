@@ -9,7 +9,7 @@ const Footer = () => {
         <Link
           href='https://uk-ua.facebook.com/'
           passHref
-          activeclassname='app-footer__socials__item'
+          className='app-footer__socials__item'
         >
           <svg className='app-footer__socials__item-icon'>
             <use xlinkHref='./images/sprite.svg#fb'></use>
@@ -18,7 +18,7 @@ const Footer = () => {
         <Link
           href='https://twitter.com/?lang=uk'
           passHref
-          activeclassname='app-footer__socials__item'
+          className='app-footer__socials__item'
         >
           <svg className='app-footer__socials__item-icon'>
             <use xlinkHref='./images/sprite.svg#twitter'></use>
@@ -27,7 +27,7 @@ const Footer = () => {
         <Link
           href='https://www.linkedin.com/'
           passHref
-          activeclassname='app-footer__socials__item'
+          className='app-footer__socials__item'
         >
           <svg className='app-footer__socials__item-icon'>
             <use xlinkHref='./images/sprite.svg#linkedin'></use>

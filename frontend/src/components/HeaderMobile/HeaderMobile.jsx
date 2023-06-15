@@ -20,7 +20,7 @@ const HeaderMobile = () => {
             <img
               src='/omega.svg'
               alt='logo'
-              activeclassname='app__mobile-header__logo-image'
+              className='app__mobile-header__logo-image'
             />
           </Link>
         </div>
@@ -40,7 +40,7 @@ const HeaderMobile = () => {
           href='/'
           scroll={false}
           passHref
-          activeclassname='app__mobile-navigation__item'
+          className='app__mobile-navigation__item'
           onClick={closeNav}
         >
           WHAT WE DO
@@ -50,7 +50,7 @@ const HeaderMobile = () => {
           href='/'
           scroll={false}
           passHref
-          activeclassname='app__mobile-navigation__item'
+          className='app__mobile-navigation__item'
           onClick={closeNav}
         >
           OUR WORK
@@ -60,7 +60,7 @@ const HeaderMobile = () => {
           href='/'
           scroll={false}
           passHref
-          activeclassname='app__mobile-navigation__item'
+          className='app__mobile-navigation__item'
           onClick={closeNav}
         >
           SEO INSIGHTS
@@ -70,7 +70,7 @@ const HeaderMobile = () => {
           href='/'
           scroll={false}
           passHref
-          activeclassname='app__mobile-navigation__item'
+          className='app__mobile-navigation__item'
           onClick={closeNav}
         >
           ABOU US
