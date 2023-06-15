@@ -44,4 +44,10 @@ const Posts = (props) => {
   );
 };
 
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}
+
 export default Posts;

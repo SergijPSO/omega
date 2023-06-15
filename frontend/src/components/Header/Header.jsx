@@ -5,7 +5,7 @@ const Header = () => {
     <header className='app__header'>
       <nav className='app__navigation'>
         <div className='app__navigation__logo'>
-          <Link className='app__navigation__logo-link' href='/'>
+          <Link href='/' passHref activeclassname='app__navigation__logo-link'>
             <img
               src='/omega.svg'
               alt='logo'
@@ -16,36 +16,40 @@ const Header = () => {
         <ul className='app__navigation__list'>
           <li className='app__navigation__item'>
             <Link
-              className='app__navigation__item-link'
               href='/'
               scroll={false}
+              passHref
+              activeclassname='app__navigation__item-link'
             >
               WHAT WE DO
             </Link>
           </li>
           <li className='app__navigation__item'>
             <Link
-              className='app__navigation__item-link'
               href='/#prices'
               scroll={false}
+              passHref
+              activeclassname='app__navigation__item-link'
             >
               OUR WORK
             </Link>
           </li>
           <li className='app__navigation__item'>
             <Link
-              className='app__navigation__item-link'
               href='/#about'
               scroll={false}
+              passHref
+              activeclassname='app__navigation__item-link'
             >
               SEO INSIGHTS
             </Link>
           </li>
           <li className='app__navigation__item'>
             <Link
-              className='app__navigation__item-link'
               href='/#contacts'
               scroll={false}
+              passHref
+              className='app__navigation__item-link'
             >
               ABOU US
             </Link>

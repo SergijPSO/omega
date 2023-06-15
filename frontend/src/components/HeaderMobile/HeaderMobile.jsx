@@ -16,11 +16,11 @@ const HeaderMobile = () => {
     <div className='app__mobile'>
       <header className='app__mobile-header'>
         <div className='app__mobile-header__logo'>
-          <Link href='/' className='app__mobile-header__logo-link'>
+          <Link href='/' passHref className='app__mobile-header__logo-link'>
             <img
               src='/omega.svg'
               alt='logo'
-              className='app__mobile-header__logo-image'
+              activeclassname='app__mobile-header__logo-image'
             />
           </Link>
         </div>
@@ -37,33 +37,40 @@ const HeaderMobile = () => {
         }
       >
         <Link
-          className='app__mobile-navigation__item'
           href='/'
           scroll={false}
+          passHref
+          activeclassname='app__mobile-navigation__item'
           onClick={closeNav}
         >
           WHAT WE DO
         </Link>
+
         <Link
-          className='app__mobile-navigation__item'
           href='/'
           scroll={false}
+          passHref
+          activeclassname='app__mobile-navigation__item'
           onClick={closeNav}
         >
           OUR WORK
         </Link>
+
         <Link
-          className='app__mobile-navigation__item'
           href='/'
           scroll={false}
+          passHref
+          activeclassname='app__mobile-navigation__item'
           onClick={closeNav}
         >
           SEO INSIGHTS
         </Link>
+
         <Link
-          className='app__mobile-navigation__item'
           href='/'
           scroll={false}
+          passHref
+          activeclassname='app__mobile-navigation__item'
           onClick={closeNav}
         >
           ABOU US

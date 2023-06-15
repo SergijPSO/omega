@@ -20,4 +20,10 @@ const Layout = (props) => {
   );
 };
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 export default Layout;
