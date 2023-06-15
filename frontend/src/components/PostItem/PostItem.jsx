@@ -42,7 +42,6 @@ const PostItem = ({ post, onClick }) => {
 };
 
 export async function getServerSideProps() {
-  // Here you can fetch data from an external API or perform any other async tasks
   return {
     props: {},
   };
