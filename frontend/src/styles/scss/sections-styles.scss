@@ -10,9 +10,16 @@
   }
 
   &--posts {
-    padding: 4.75rem 0 5.063rem;
-    margin: 0 auto;
+    padding: 4.75rem 8.438rem 5.063rem;
     width: 100%;
-    max-width: 96rem;
+  }
+}
+
+@media all and (max-width:48.75rem) {
+  .app-section {
+    &--posts {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
   }
 }

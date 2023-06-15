@@ -5,7 +5,30 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
+  }
+}
+
+@media all and (max-width: 101.313rem) {
+
+  .app-posts {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.875rem;
+    }
+  }
+
+}
+
+@media all and (min-width: 101.313rem) {
+
+  .app-posts {
+    &__list {
+      flex-wrap: nowrap;
+      gap: 2%;
+    }
   }
 
 }

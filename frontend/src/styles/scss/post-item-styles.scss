@@ -2,13 +2,13 @@
 
 .app-post {
   width: 100%;
-  max-width: 21.25rem;
   border-radius: .313rem;
   cursor: pointer;
 
   &__selected {
-    margin: 2.5rem auto 0;
-    width: 38%;
+    margin: .75rem auto 0;
+    width: 100%;
+    max-width: 57.5rem;
     border-radius: .625rem;
     box-shadow: 0 0 .625rem rgba(0, 0, 0, .30);
 
@@ -84,6 +84,31 @@
 
     &-text {
       padding: 0 0 0 .625rem;
+    }
+  }
+}
+
+@media all and (max-width: 101.25rem) {
+  .app-post {
+    max-width: 17.125rem;
+  }
+}
+
+@media all and (max-width: 88.75rem) {
+  .app-post {
+    max-width: 23%;
+    min-width: 15rem;
+  }
+}
+
+@media all and (max-width:48.75rem) {
+  .app-post {
+    max-width: unset;
+    min-width: unset;
+
+    &__selected {
+      padding: 0;
+      margin: 0;
     }
   }
 }

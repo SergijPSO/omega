@@ -28,3 +28,10 @@
     }
   }
 }
+
+@media all and (max-width:48.75rem) {
+  .app-footer {
+    padding: 0 1.25rem;
+    background-color: #2C313A;
+  }
+}
