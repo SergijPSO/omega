@@ -2,17 +2,15 @@
 
 .app {
   &__header {
+    position: relative;
     display: flex;
     padding: 0 8.438rem;
-    position: relative;
-    z-index: 10;
     top: 0;
+    z-index: 10;
   }
 
   &__navigation {
-    display: inherit;
-    align-items: center;
-    justify-content: space-between;
+    @include between-vertical-center;
     width: 100%;
     flex-wrap: wrap;
 

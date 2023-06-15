@@ -1,6 +1,11 @@
 .app-posts {
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
 }

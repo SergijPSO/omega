@@ -1,51 +1,50 @@
 @import './variables.scss';
 
 .app-jumbotron {
-  padding: 5.313rem 20px 7.063rem;
+  position: relative;
+  padding: 5.313rem 0 7.063rem;
   margin: 0 auto;
   max-width: 41.688rem;
   text-align: center;
   color: $primary-white;
-  position: relative;
 
   &__inner-border {
-    border-radius: 8px;
-    max-width: 627px;
-    width: 100%;
-    width: 100%;
-    height: 183px;
-    border: 1px solid white;
     position: absolute;
-    bottom: 132px;
+    width: 100%;
+    max-width: 41.688rem;
+    height: 11.438rem;
+    border: .063rem solid white;
+    border-radius: .5rem;
+    bottom: 8.25rem;
     border-top: 0;
     border-bottom: 0;
   }
 
   &__title {
+    position: relative;
     display: inline;
     font-size: 2.375rem;
     font-weight: 700;
     line-height: 2.588rem;
-    position: relative;
 
     &:after {
       content: "";
       position: absolute;
-      border-bottom: 1px solid white;
-      top: 28px;
-      width: 111px;
+      width: 8.25rem;
+      margin-left: 1.813rem;
+      top: 1.813rem;
       left: 100%;
-      margin-left: 29px;
+      border-bottom: .063rem solid white;
     }
 
     &:before {
       content: "";
       position: absolute;
-      border-bottom: 1px solid white;
-      top: 28px;
-      width: 111px;
+      margin-right: 1.813rem;
+      width: 8.25rem;
+      top: 1.813rem;
       right: 100%;
-      margin-right: 29px;
+      border-bottom: .063rem solid white;
     }
   }
 
@@ -58,35 +57,35 @@
   }
 
   &__btn {
+    position: relative;
     padding: .625rem 2rem;
+    top: .5rem;
     background-color: $primary-red;
     font-size: 1.25rem;
     color: $primary-white;
     line-height: 1.884rem;
     border: .063rem solid $primary-black;
     border-radius: .188rem;
-    position: relative;
-    top: 8px;
     cursor: pointer;
 
     &:after {
       content: "";
       position: absolute;
-      border-bottom: 1px solid white;
-      top: 24px;
-      width: 202px;
+      margin-left: 1.813rem;
+      width: 13.875rem;
+      top: 1.406rem;
       left: 100%;
-      margin-left: 29px;
+      border-bottom: .063rem solid white;
     }
 
     &:before {
       content: "";
       position: absolute;
-      border-bottom: 1px solid white;
-      top: 24px;
-      width: 202px;
+      width: 13.875rem;
+      margin-right: 1.813rem;
+      top: 1.406rem;
       right: 100%;
-      margin-right: 29px;
+      border-bottom: .063rem solid white;
     }
   }
 

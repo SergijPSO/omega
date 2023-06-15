@@ -13,10 +13,11 @@ const PostDetails = () => {
   }
 
   return (
-    <div className='app-post__container'>
-      <img src={`${post.image}`} />
-      <h1>{post.title}</h1>
-      <p>{post.text}</p>
+    <div className='app-post__selected'>
+      <img className='app-post__selected_image' src={`${post.image}`} />
+      <h1 className='app-post__selected_title'>{post.title}</h1>
+      <p className='app-post__selected_summary'>{post.summary}</p>
+      <p className='app-post__selected_text'>{post.text}</p>
     </div>
   );
 };

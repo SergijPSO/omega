@@ -3,7 +3,7 @@ import { React, useState } from "react";
 const PostItem = ({ post, onClick }) => {
   const [height, setHeight] = useState("3.5rem");
   const [rotate, setRotate] = useState(false);
-  const { id, image, text, title } = post;
+  const { summary, image, text, title } = post;
 
   const toggleHeight = () => {
     setHeight((prevHeight) => (prevHeight === "3.5rem" ? "100%" : "3.5rem"));
@@ -22,7 +22,7 @@ const PostItem = ({ post, onClick }) => {
         <h3 className='app-post_title' onClick={onClick}>{`${title}`}</h3>
 
         <p className='app-post_text' style={{ height }}>
-          {`${text}`}
+          {`${summary}`}
         </p>
 
         <button className='app-post__btn' onClick={toggleHeight}>

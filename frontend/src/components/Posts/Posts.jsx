@@ -29,14 +29,16 @@ const Posts = (props) => {
 
   return (
     <div className='app-posts'>
-      {postData &&
-        postData.map((post) => (
-          <PostItem
-            key={post.id}
-            post={post}
-            onClick={() => handleClick(post.id)}
-          />
-        ))}
+      <div className='app-posts__list'>
+        {postData &&
+          postData.map((post) => (
+            <PostItem
+              key={post.id}
+              post={post}
+              onClick={() => handleClick(post.id)}
+            />
+          ))}
+      </div>
       <div>{props.children}</div>
     </div>
   );
