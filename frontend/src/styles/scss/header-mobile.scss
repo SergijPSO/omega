@@ -3,12 +3,12 @@
 
 .app {
   &__mobile {
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
     z-index: 9;
+    background-color: $primary-graphite;
 
     &-header {
       @include between-vertical-center;
@@ -54,6 +54,7 @@
       width: 100%;
       max-width: 73.5rem;
       transition: all .3s ease-out;
+      background-color: $primary-graphite;
 
       &__item {
         padding: .8rem 0;
@@ -71,7 +72,7 @@
         height: 100vh;
         width: 100%;
         transition: all .1s ease-in;
-        backdrop-filter: blur(10rem);
+        background-color: $primary-graphite;
 
         .app__mobile-navigation__item {
           display: block;
