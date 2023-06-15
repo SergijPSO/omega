@@ -1,18 +1,42 @@
 import React from "react";
+import { useRouter } from "next/router";
 import PostItem from "../PostItem/PostItem";
-import posts from "../../data/posts.json";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Posts = (props) => {
+  const [postData, setPostData] = useState([]);
+  const router = useRouter();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/news");
+        setPostData(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const handleClick = (postId) => {
+    const selectedPost = postData.find((post) => post.id === postId);
+    router.push(`/posts/${postId}`, undefined, { shallow: true });
+    sessionStorage.setItem("selectedPost", JSON.stringify(selectedPost));
+  };
+
   return (
     <div className='app-posts'>
-      {posts.posts.map((post) => (
-        <PostItem
-          key={post.id}
-          imageUrl={post.image}
-          postTitle={post.title}
-          postText={post.text}
-        />
-      ))}
+      {postData &&
+        postData.map((post) => (
+          <PostItem
+            key={post.id}
+            post={post}
+            onClick={() => handleClick(post.id)}
+          />
+        ))}
       <div>{props.children}</div>
     </div>
   );

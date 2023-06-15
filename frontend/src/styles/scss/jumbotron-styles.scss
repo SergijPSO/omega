@@ -1,16 +1,52 @@
 @import './variables.scss';
 
 .app-jumbotron {
-  padding: 5.313rem 0 7.063rem;
+  padding: 5.313rem 20px 7.063rem;
   margin: 0 auto;
   max-width: 41.688rem;
   text-align: center;
   color: $primary-white;
+  position: relative;
+
+  &__inner-border {
+    border-radius: 8px;
+    max-width: 627px;
+    width: 100%;
+    width: 100%;
+    height: 183px;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 132px;
+    border-top: 0;
+    border-bottom: 0;
+  }
 
   &__title {
+    display: inline;
     font-size: 2.375rem;
     font-weight: 700;
     line-height: 2.588rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid white;
+      top: 28px;
+      width: 111px;
+      left: 100%;
+      margin-left: 29px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid white;
+      top: 28px;
+      width: 111px;
+      right: 100%;
+      margin-right: 29px;
+    }
   }
 
   &__text {
@@ -29,6 +65,29 @@
     line-height: 1.884rem;
     border: .063rem solid $primary-black;
     border-radius: .188rem;
+    position: relative;
+    top: 8px;
     cursor: pointer;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid white;
+      top: 24px;
+      width: 202px;
+      left: 100%;
+      margin-left: 29px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid white;
+      top: 24px;
+      width: 202px;
+      right: 100%;
+      margin-right: 29px;
+    }
   }
+
 }
