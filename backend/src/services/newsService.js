@@ -12,6 +12,6 @@ class NewsService {
     const selectedPost = MOCK_POSTS.filter((el) => el.id === id);
     return selectedPost;
   }
-} 
+}
 
 export const newsService = new NewsService();

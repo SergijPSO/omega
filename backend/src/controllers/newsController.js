@@ -19,7 +19,7 @@ class NewsController {
   }
   getOne(req, res) {
     try {
-      const post = newsService.getOne(req.params.id);
+      const post = newsService.getOne(req.params._id);
       return res.json(post);
     } catch (e) {
       res.status(500).json(e);
